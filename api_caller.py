@@ -3,7 +3,7 @@ import requests
 access_token = 'access_token_here_if_necessary'
 
 def call_api(method, id):
-    endpoint = 'https://google.com/' + id
+    endpoint = 'https://hostname/path/' + id
 
     request_url = endpoint + '?access_token=' + access_token
     req = requests.request(method, request_url)
@@ -11,7 +11,7 @@ def call_api(method, id):
     print(request_url)
     print(req.status_code)
 
-    return str(req.content)
+    return str(req.content)[:100]
 
 
 def clean_cache(id):
