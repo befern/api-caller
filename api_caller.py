@@ -1,10 +1,9 @@
-#!/usr/local/Cellar/python/3.7.2_1/bin/python3
 import requests
 
 access_token = 'access_token_here_if_necessary'
 
 def call_api(method, id):
-    endpoint = 'https://hostname/path/' + id
+    endpoint = 'https://google.com/' + id
 
     request_url = endpoint + '?access_token=' + access_token
     req = requests.request(method, request_url)
@@ -12,7 +11,7 @@ def call_api(method, id):
     print(request_url)
     print(req.status_code)
 
-    return str(req.content)[:100]
+    return str(req.content)
 
 
 def clean_cache(id):

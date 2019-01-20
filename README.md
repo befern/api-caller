@@ -25,5 +25,3 @@ Install requests library
 Execute
 
     ./api_caller.py
-   
-   
