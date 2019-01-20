@@ -1,4 +1,4 @@
-#Api-caller
+# Api-caller
 
 Script that calls in a loop to an endpoint with a bulk of data (generally ids)
 
@@ -14,7 +14,7 @@ The current script accepts OAuth2 token
 The current script has a method to clean cache
 (Comment the call to the method if it is not needed)
 
-##Requirements
+## Requirements
 
 Python3
 
